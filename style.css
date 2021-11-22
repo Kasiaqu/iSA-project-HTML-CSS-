@@ -36,3 +36,31 @@ body{
     position: relative;
     margin-right: 30px;
 }
+.main{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 40px;
+    min-width: 1700px;
+}
+.images{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 1000px;
+}
+.current{
+    padding: 80px 0;
+    min-width: 1000px;
+}
+.album{
+    display: flex;
+    justify-content:space-between;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 200px;
+}
