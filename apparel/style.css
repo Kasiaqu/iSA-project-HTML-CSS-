@@ -132,6 +132,9 @@ input:invalid:focus ~ small {
 	top: 40px;
 	left: -100px;
 }
+.navbar{
+	display: none;
+}
 
 @media (max-width: 375px){
 	*{
@@ -140,9 +143,10 @@ input:invalid:focus ~ small {
 		margin: 0;
 	}
 	body {
-		background-color: gainsboro;
 		margin: 0;
+		min-width: 320px;
 		max-width: 375px;
+		min-height: 940px;
 		background-image: url("images/bg-pattern-desktop.svg");
 		background-repeat: no-repeat;
 	}
@@ -150,11 +154,11 @@ input:invalid:focus ~ small {
 		display: absolute;
 		margin: 0;
 		padding: 0;
-		height: 100vh;
+		/* height: 100vh; */
 		width: 100%;
-		min-width: 200px;
+		min-width: 320px;
 		max-width: 375px;
-		min-height: 750px;
+		min-height: 940px;
 		max-height: 1500px;
 	} 
 	.background {
@@ -162,11 +166,11 @@ input:invalid:focus ~ small {
 	}
 	.content {
 		width: 100%;
-		min-width: 200px;
+		min-width: 320px;
 		max-width: 375px;
-		min-height: 750px;
+		min-height: 940px;
 		max-height: 1500px;
-		height: 100vh;
+		/* height: 100vh; */
 		position: absolute;	
 		padding: 0 25px;
 	}
@@ -183,12 +187,12 @@ input:invalid:focus ~ small {
 		width: 100vw;
 		height: auto;
 		position: absolute;
-		top: 20px;
+		top: 70px;
 	}
 
 	.logo{
 		position: relative;
-		top: 10px;
+		top: 60px;
 		padding: 10px;
 	}
 
@@ -196,12 +200,12 @@ input:invalid:focus ~ small {
 		position: relative;
 		font-size: 1.5em;
 		text-align: center;
-		top: 430px;
+		top: 480px;
 	}
 	.text{
 		position: relative;
 		padding: 0;
-		top: 440px;
+		top: 490px;
 		text-align: center;
 		font-size: 0.90em;
 		font-weight: 500;
@@ -209,7 +213,7 @@ input:invalid:focus ~ small {
 	.emailbox {
 		position: relative;
 		width: 100%;
-		top: 490px;
+		top: 520px;
 	}
 	input {
 		width: 100%;
@@ -221,5 +225,69 @@ input:invalid:focus ~ small {
 	input:invalid:focus ~ small {
 		top: 30px;
 		left: -50px;
+	}
+
+	.navbar{
+		display: block;
+		position: fixed;  
+		top: 0;  
+		min-width: 320px;
+		height: 50px;
+		width: 100%;
+		background: linear-gradient(
+		311deg,
+		rgba(239, 147, 148, 1) 61%,
+		rgba(245, 184, 183, 1) 81%); 
+		z-index: 6;
+	} 
+	.menu{
+		height: 50px;
+		width: 100%;
+		padding: 0;
+		display: none;
+	}
+	.item {  
+		position: fixed;
+		font-size: 2em;
+		top: 50px;  
+		height: 50px;
+		width: 100%;
+		list-style-type: none;
+		text-align: center;
+		background: linear-gradient(
+		311deg,
+		rgba(239, 147, 148, 1) 61%,
+		rgba(245, 184, 183, 1) 81%);
+	}
+	.hamburger-menu{    
+		padding: 5px;  
+		cursor: pointer;
+		height: 50px;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+	.button-down{
+		position: relative;
+		left: 50%;
+		top: 10px;
+		z-index: 8;
+	}
+	.button-up{
+		display: none;
+		position: relative;
+		left: 50%;
+		top: 10px;
+		z-index: 8;
+	}
+
+	.menu-change{
+		display: inherit;
+	}
+	.change .button-up{
+		display: block;
+	}
+	.change .button-down{
+		display: none;
 	}
 }
