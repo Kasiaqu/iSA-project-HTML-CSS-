@@ -146,7 +146,8 @@ input:invalid:focus ~ small {
 		margin: 0;
 		min-width: 320px;
 		max-width: 375px;
-		min-height: 940px;
+		min-height: 940px;		
+		max-height: 950px;		
 		background-image: url("images/bg-pattern-desktop.svg");
 		background-repeat: no-repeat;
 	}
@@ -159,7 +160,7 @@ input:invalid:focus ~ small {
 		min-width: 320px;
 		max-width: 375px;
 		min-height: 940px;
-		max-height: 1500px;
+		max-height: 950px;
 	} 
 	.background {
 		display: none;
@@ -169,7 +170,7 @@ input:invalid:focus ~ small {
 		min-width: 320px;
 		max-width: 375px;
 		min-height: 940px;
-		max-height: 1500px;
+		max-height: 950px;
 		/* height: 100vh; */
 		position: absolute;	
 		padding: 0 25px;
@@ -184,7 +185,7 @@ input:invalid:focus ~ small {
 		clip: rect(65px, auto, 420px, auto);
 		min-width: 320px;
 		max-width: 375px;
-		width: 100vw;
+		width: 100%;
 		height: auto;
 		position: absolute;
 		top: 70px;
@@ -248,12 +249,13 @@ input:invalid:focus ~ small {
 	}
 	.item {  
 		position: fixed;
-		font-size: 2em;
+		font-size: 1.5em;
 		top: 50px;  
 		height: 50px;
 		width: 100%;
 		list-style-type: none;
 		text-align: center;
+		line-height: 50px;
 		background: linear-gradient(
 		311deg,
 		rgba(239, 147, 148, 1) 61%,
