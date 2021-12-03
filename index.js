@@ -33,7 +33,7 @@ incrementButton.addEventListener("click", handleIncrementClick);
 decrementButton.addEventListener("click", handleDecrementClick);
 
 
-//Function 
+//Function basket
 const cart = document.querySelector(".cart")
 const basket = document.querySelector('.basket')
 const bastitle = document.querySelector('.bastitle')
@@ -45,3 +45,25 @@ cart.addEventListener('click', ()  => {
 	bastitle.classList.toggle("newBastitle");
 	bastext.classList.toggle("newBastext");
 });
+
+//Funtion changePhoto
+displayer4();
+function displayer4() {
+	var el = document.getElementById("current");
+	el.innerHTML = "<img src=\"images/image-product-4.jpg\" width=\"500px\" height=\"500px\">";
+}
+displayer3();
+function displayer3() {
+	var el = document.getElementById("current");
+	el.innerHTML = "<img src=\"images/image-product-3.jpg\" width=\"500px\" height=\"500px\">";
+	}
+displayer2();
+function displayer2() {
+	var el = document.getElementById("current");
+	el.innerHTML = "<img src=\"images/image-product-2.jpg\" width=\"500px\" height=\"500px\">";
+	}
+displayer1();
+function displayer1() {
+	var el = document.getElementById("current");
+	el.innerHTML = "<img src=\"images/image-product-1.jpg\" width=\"500px\" height=\"500px\">";
+  }

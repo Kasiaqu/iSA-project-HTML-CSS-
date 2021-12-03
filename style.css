@@ -227,28 +227,21 @@ button:hover {
 }
 
 /* Stylowanie zdjec */
-
+.thumbnail:active {
+	border: 3px solid hsl(26, 100%, 55%);
+}
 .thumbnail:hover{
     position: relative;
-    border: 3px solid hsl(26, 100%, 55%);
+    /* border: 3px solid hsl(26, 100%, 55%); */
     border-radius: 14px;
 }
 .thumbnail img:hover {
     opacity: 0.5;
 }
-/* .thumbnail:active:nth-of-type(1){
-    position: relative;    
-    border-radius: 10px;
-    transform: scale(5.5);
-    left: 200px;
-    top: -320px;
-    z-index: 10;
-} */
 .avatar > img:hover {
 	border: 2px solid hsl(26, 100%, 55%);
 	border-radius: 100%;
 }
-
 /* Stylowanie menu */
 .menu .tab:hover::after{
     content:"";
@@ -315,4 +308,12 @@ button:hover {
     padding: 0;
     margin: 0;
 	z-index: 50;
+}
+
+
+.product1, .product2, .product3, .product4 {
+	display: none;
+}
+.thumbnail:visited{
+	border: 2px solid black;
 }
