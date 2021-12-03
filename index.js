@@ -24,7 +24,7 @@ function makeClickHandler(delta) {
 	};
 }
 
-	// Click handlers (created using click handler generator)
+// Click handlers (created using click handler generator)
 	const handleIncrementClick = makeClickHandler(+1);
 const handleDecrementClick = makeClickHandler(-1);
 
@@ -33,6 +33,7 @@ incrementButton.addEventListener("click", handleIncrementClick);
 decrementButton.addEventListener("click", handleDecrementClick);
 
 
+////
 //Function basket
 const cart = document.querySelector(".cart")
 const basket = document.querySelector('.basket')
@@ -46,7 +47,8 @@ cart.addEventListener('click', ()  => {
 	bastext.classList.toggle("newBastext");
 });
 
-//Funtion changePhoto
+////
+//Funtion displayer
 displayer4();
 function displayer4() {
 	var el = document.getElementById("current");
@@ -66,4 +68,16 @@ displayer1();
 function displayer1() {
 	var el = document.getElementById("current");
 	el.innerHTML = "<img src=\"images/image-product-1.jpg\" width=\"500px\" height=\"500px\">";
+  }
+
+////  
+// Active thumbnail is opaque
+  var btnContainer = document.getElementById("album");
+  var btns = btnContainer.getElementsByClassName("thumbnail");
+  for (var i = 0; i < btns.length; i++) {
+	btns[i].addEventListener("click", function() {
+	  var current = document.getElementsByClassName("active");
+	  current[0].className = current[0].className.replace(" active", "");
+	  this.className += " active";
+	});
   }
