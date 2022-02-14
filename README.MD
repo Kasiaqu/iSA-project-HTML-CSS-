@@ -6,28 +6,24 @@ These are group projects created on bootcamp [Infoshare Academy](https://github.
 
 ## Apparel
 
-#
-
 This is a coming soon page.
 
-![Apparel page](/src/apparel1.PNG)
+![Apparel page](/images/apparel1.png)
 
 It consist of an email input. If you try to write something that isn't an email type, you will get the error massage below.
 
-<img src='./src/apparel2.png' alt='apparel' style='width: 250px'/>
+<img src='./images/apparel2.png' alt='apparel' style='width: 250px'/>
 
 Below you can see mobile version with hamburger menu.
 
-![Apparel mobile page](/src/apparelmobile.PNG)
+![Apparel mobile page](/images/apparelmobile.png)
 
 ## Ecommerce
 
-#
-
 This is an ecommerce product page.
 
-![Ecommerce page](/src/ecommerce.PNG)
+![Ecommerce page](/images/ecommerce.png)
 
 You can select amount of products to buy, change the main photo and display cart.
 
-![Ecommerce page2](/src/ecommerce2.PNG)
+![Ecommerce page2](/images/ecommerce2.png)
